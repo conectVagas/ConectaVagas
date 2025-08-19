@@ -1,0 +1,40 @@
+
+<!doctype html><html lang="pt-br"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ConectaVagas — Encontre vagas perto de você</title>
+<link rel="stylesheet" href="/style.css"/><link rel="icon" href="/logo.svg"/></head><body>
+<header><div class="container"><nav>
+  <div class="brand"><img class="logo" src="/logo.svg" alt="ConectaVagas"/><div><strong>ConectaVagas</strong><div style="font-size:12px;color:#a9b6d7">Oportunidades reais, atualizadas</div></div></div>
+  <div class="search"><input id="q" class="input" placeholder="Ex: Administração, Campinas"/><button id="btnSearch" class="btn light">Buscar</button></div>
+  <div class="stack"><a href="/postar.html" class="btn">Publicar Vaga</a></div>
+</nav></div></header>
+<main class="container grid" style="margin-top:16px">
+  <section class="card">
+    <div class="title"><span>📰</span><h1 style="margin:0">Vagas Recentes</h1></div>
+    <div class="tags">
+      <button class="badge" data-filter="urgent">Vagas Urgentes</button>
+      <button class="badge" data-filter="noexp">Sem Experiência</button>
+      <button class="badge" data-filter="today">Vagas de Hoje</button>
+      <button class="badge" data-filter="">Todas</button>
+    </div>
+    <div id="jobs"></div><div id="pager" style="margin-top:12px;display:flex;gap:8px;justify-content:center"></div>
+  </section>
+  <aside class="side">
+    <div class="card"><h3>Oportunidades de trabalho</h3>
+      <div class="list">
+        <a href="#" data-tag="Administração">Administração</a>
+        <a href="#" data-tag="Vendas">Vendas</a>
+        <a href="#" data-tag="TI">TI</a>
+        <a href="#" data-tag="Logística">Logística</a>
+        <a href="#" data-tag="Estágio">Estágio</a>
+      </div>
+    </div>
+    <div class="card"><h3>Divulgue sua vaga</h3>
+      <p>Cadastre-se como empresa e publique gratuitamente. A vaga aparece na hora para os candidatos.</p>
+      <a class="btn" href="/postar.html">Publicar Vaga</a>
+    </div>
+  </aside>
+</main>
+<footer><div class="container">© <span id="y"></span> ConectaVagas • Feito para conectar talentos e empresas.</div></footer>
+<script src="/main.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>

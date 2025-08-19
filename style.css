@@ -1,0 +1,19 @@
+
+:root{--brand:#1166ff;--bg:#f6f8fb;--text:#0b1220;--muted:#5b6b82;--card:#ffffff;--line:#e6ecf5;--radius:16px;--shadow:0 10px 30px rgba(20,40,90,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--brand);text-decoration:none}.container{max-width:1100px;margin:0 auto;padding:16px}
+header{position:sticky;top:0;background:#0c1324;color:#fff;border-bottom:1px solid #0e1931;z-index:10}
+nav{display:flex;gap:10px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:10px;align-items:center}.logo{width:36px;height:36px}
+.search{display:flex;gap:8px;flex:1;max-width:580px}.input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #1f2a46;background:#0f1730;color:#dbe6ff}
+.btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.06);background:var(--brand);color:#fff;font-weight:700;cursor:pointer}
+.btn.light{background:#1a2543;color:#dbe6ff;border:1px solid #283356}.btn.ghost{background:transparent;border:1px dashed #334067;color:#c7d2ff}
+.grid{display:grid;gap:18px;grid-template-columns:1fr 320px}@media (max-width:980px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px}
+.badge{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:12px;color:#2b3a55;background:#f1f6ff}
+.badge.warn{background:#fff8e6}.badge.ok{background:#e9fff0}
+.job{display:grid;grid-template-columns:1fr auto;gap:8px;border-bottom:1px solid var(--line);padding:12px 0}.job:last-child{border-bottom:none}
+.job-title{font-weight:800}.job-meta{color:var(--muted);font-size:14px}
+.side .list a{display:block;padding:10px;border-bottom:1px dashed var(--line);color:#22314f}
+footer{padding:24px 0;color:#6b7b95;text-align:center}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.tag{background:#eef3ff;color:#22314f;border:1px solid var(--line);padding:4px 8px;border-radius:999px;font-size:12px}
+.title{display:flex;align-items:center;gap:10px}

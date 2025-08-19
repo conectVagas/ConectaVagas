@@ -1,0 +1,37 @@
+
+<!doctype html><html lang="pt-br"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Publicar Vaga — ConectaVagas</title>
+<link rel="stylesheet" href="/style.css"/><link rel="icon" href="/logo.svg"/></head><body>
+<header><div class="container"><nav>
+  <div class="brand"><img class="logo" src="/logo.svg"/><strong>ConectaVagas</strong></div>
+  <div style="display:flex; gap:8px"><button id="btnLogin" class="btn light">Entrar</button><button id="btnLogout" class="btn ghost" style="display:none">Sair</button></div>
+</nav></div></header>
+<main class="container grid" style="margin-top:16px">
+  <section class="card" style="grid-column:1 / -1"><h2>Área da Empresa</h2><p class="muted">Faça login ou crie sua conta e publique suas vagas. Elas aparecem imediatamente na página inicial.</p></section>
+  <section class="card">
+    <h3>Publicar vaga</h3>
+    <div class="stack" style="display:flex;flex-direction:column;gap:8px">
+      <input id="title" class="input" placeholder="Título da vaga *"/>
+      <input id="company" class="input" placeholder="Empresa *"/>
+      <input id="location" class="input" placeholder="Cidade, UF *"/>
+      <input id="type" class="input" placeholder="Tipo (CLT, PJ, Estágio)"/>
+      <input id="salary" class="input" placeholder="Faixa salarial (opcional)"/>
+      <input id="tags" class="input" placeholder="Tags (separe por vírgulas: Vendas,TI)"/>
+      <textarea id="description" class="input" rows="6" placeholder="Descrição detalhada *"></textarea>
+      <div style="display:flex;gap:12px;align-items:center">
+        <label><input type="checkbox" id="urgent"/> Urgente</label>
+        <label><input type="checkbox" id="noexp"/> Sem experiência</label>
+        <label><input type="checkbox" id="remote"/> Remoto</label>
+      </div>
+      <input id="apply_url" class="input" placeholder="Link para candidatura (opcional)"/>
+      <input id="apply_email" class="input" placeholder="Email para currículo (opcional)"/>
+      <button id="publish" class="btn">Publicar</button>
+      <div id="msg" class="muted"></div>
+    </div>
+  </section>
+  <aside class="card"><h3>Minhas vagas</h3><div id="mine" class="muted">Faça login para ver.</div></aside>
+</main>
+<footer><div class="container">© <span id="y"></span> ConectaVagas</div></footer>
+<script src="/main.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
