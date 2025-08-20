@@ -1,7 +1,7 @@
 {
   "name": "conectavagas",
   "version": "1.0.0",
-  "description": "Plataforma simples de postagem e consulta de vagas de emprego (Node + Express + SQLite)",
+  "description": "Plataforma simples de postagem e consulta de vagas de emprego",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
